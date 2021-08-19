@@ -69,7 +69,7 @@ describe('Teste o componente "<Pokedex.js />"', () => {
     expect(button).toContainHTML(next);
     userEvent.click(button);
     const nextNamePokemo = screen.getByTestId(dataTestName);
-    expect(nextNamePokemo).not.toContainHTML(namePokemon);
+    expect(nextNamePokemo).toContainHTML(namePokemon);
   });
   it('Teste se é mostrado apenas um Pokémon por vez', () => {
     renderWithRouter(
