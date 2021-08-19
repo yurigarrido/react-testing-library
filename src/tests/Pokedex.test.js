@@ -82,9 +82,9 @@ describe('Teste o componente "<Pokedex.js />"', () => {
     renderWithRouter(
       <App />,
     );
-    const numerofTypes = 7;
+    const numberOfTypes = 7;
     const buttonFilter = screen.getAllByTestId('pokemon-type-button');
-    expect(buttonFilter.length).toBe(numerofTypes);
+    expect(buttonFilter.length).toBe(numberOfTypes);
     expect(buttonFilter[0]).toHaveTextContent('Electric');
     expect(buttonFilter[1]).toHaveTextContent('Fire');
     expect(buttonFilter[2]).toHaveTextContent('Bug');
